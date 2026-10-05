@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Prime Baking: cakes, pastries and sweet treats baked fresh every morning.">
+<title>Prime Baking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Pacifico&family=Nunito:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <span>Fresh from the oven daily<span class="hide-sm"> · Free city delivery over $40</span></span>
+  <ul><li>Eng</li><li>Usd</li><li>My account</li></ul>
+</div></div>
+
+<header class="header" id="header"><div class="wrap">
+  <a class="logo" href="#top" aria-label="Prime Baking home"><img src="/img/logo.png" alt="Prime Baking"></a>
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="#top" data-spy="top">Home</a>
+    <a href="#shop" data-spy="shop">Shop</a>
+    <a href="#bakery" data-spy="bakery">Bakery</a>
+    <a href="#origins" data-spy="origins">About</a>
+    <a href="#contact" data-spy="contact">Contact</a>
+    <span class="nav-ink" id="navInk"></span>
+  </nav>
+  <button class="cart-tab" id="cartBtn" aria-controls="drawer" aria-expanded="false">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+    <span><span class="word">Cart </span>(<span class="count" id="cartCount">0</span><span class="word"> items</span>)</span>
+  </button>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+</div></header>
+
+<main id="top">
+<section class="hero" aria-label="Welcome">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="wrap hero-inner">
+    <h1><span class="line"><span>Baked fresh every morning</span></span><span class="line"><span>Prime for every craving</span></span></h1>
+    <p>Cakes, pastries and sweet treats made by hand in small batches, out of the oven by 7 am.</p>
+    <a class="btn" href="#shop">See our offer
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 4v16M5 13l7 7 7-7"/></svg></a>
+  </div>
+</section>
+
+<div class="wrap features">
+  <ul>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3.2"/><path d="M6.2 18.6a7 7 0 0 1 11.6 0"/></svg><div>Personalised boxes<small>Mix any treats you like</small></div></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 17V11a6 6 0 0 1 12 0v6l1.5 2h-15L6 17Z"/><path d="M10 21h4"/></svg><div>Fresh-batch alerts<small>Know when the oven opens</small></div></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg><div>Worldwide shipping<small>Chilled packing, 3 to 6 days</small></div></li>
+  </ul>
+</div>
+
+<section class="section" id="shop">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="eyebrow">This week's counter</p><h2>Popular in our shop</h2></div>
+      <div class="chips" id="chips" role="group" aria-label="Filter products">
+        <span class="chip-ink" id="chipInk"></span>
+        <button aria-pressed="true" data-f="all">All</button>
+        <button aria-pressed="false" data-f="cakes">Cakes</button>
+        <button aria-pressed="false" data-f="pastries">Pastries</button>
+        <button aria-pressed="false" data-f="treats">Sweet treats</button>
+      </div>
+    </div>
+    <div class="grid" id="shopGrid">
+      <a class="tile" href="#bakery"><img src="/img/p_cookies.jpg" alt=""><strong>Popular in our shop</strong><span>View more</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="origins" id="origins" aria-label="What goes into every bake">
+  <p class="eyebrow">What goes into every bake</p>
+  <div class="marquee" id="marquee"></div>
+</section>
+
+<section class="section" id="bakery">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="eyebrow">Out of the oven at 7 am</p><h2>Latest from our bakery</h2></div>
+    </div>
+    <div class="grid" id="bakeryGrid">
+      <a class="tile" href="#shop" data-last><img src="/img/p_velvet.jpg" alt=""><strong>Latest from our shop</strong><span>View more</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-label="Monthly hamper draw">
+  <div class="band-bg" id="bandBg"></div>
+  <div class="wrap">
+    <h2>Win our special prize on our Facebook page</h2>
+    <p>Every month one follower takes home a Prime Baking hamper of cakes, pastries and fresh bakes.</p>
+    <a class="btn" href="https://www.facebook.com/" target="_blank" rel="noopener">Enter the draw</a>
+  </div>
+</section>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#top" aria-label="Prime Baking home"><img src="/img/logo.png" alt="Prime Baking"></a>
+      <p class="co">Prime Baking</p>
+      <p>South Washington Street 828, Washington, USA</p>
+      <p>Phone 0123 456 789 / 0123 456 788</p>
+    </div>
+    <div>
+      <h4>My account</h4>
+      <ul class="links">
+        <li><a href="#" data-open-cart>Cart</a></li>
+        <li><a href="#contact">Customer assistance</a></li>
+        <li><a href="#" data-open-cart>Checkout</a></li>
+        <li><a href="#contact">Delivery information</a></li>
+        <li><a href="#top">My account</a></li>
+        <li><a href="#contact">International shipping</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Shop hours</h4>
+      <ul class="hours">
+        <li><span>Mon to Fri</span><span>07:00 to 19:00</span></li>
+        <li><span>Saturday</span><span>08:00 to 17:00</span></li>
+        <li><span>Sunday</span><span>09:00 to 13:00</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="base"><div class="wrap"><span>Prime Baking © 2026</span><span>Handmade in small batches</span></div></div>
+</footer>
+
+
+<section class="pd" id="pd" role="dialog" aria-modal="true" aria-labelledby="pdTitle" inert>
+  <div class="pd-inner">
+    <header class="pd-top">
+      <a class="pd-logo" href="#shop" data-pd-close aria-label="Prime Baking, back to shop"><img src="/img/logo.png" alt="Prime Baking"></a>
+      <nav class="pd-nav" aria-label="Site">
+        <a href="#shop" data-pd-close>Shop</a><a href="#bakery" data-pd-close>Bakery</a><a href="#origins" data-pd-close>About</a><a href="#contact" data-pd-close>Contact</a>
+      </nav>
+      <button class="pd-bag" id="pdBag" aria-label="Open cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V7a3 3 0 0 1 6 0v1"/></svg>(<span id="pdCount">0</span>)</button>
+      <button class="pd-x" id="pdClose" aria-label="Close and return to shop"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </header>
+    <div class="pd-stage">
+      <div class="pd-visual" id="pdVisual">
+        <div class="pd-float">
+          <div class="pd-plate" id="pdPlate"><img id="pdImg" alt=""></div>
+          <div class="pd-badge" aria-hidden="true">
+            <svg class="ring" viewBox="0 0 124 124"><defs><path id="pdRing" d="M62,62 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#pdRing" textLength="286" lengthAdjust="spacing">BAKED FRESH DAILY · PRIME BAKING ·</textPath></text></svg>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-9.5-9.2C1.2 8.6 3.2 5 6.7 5c2 0 3.4 1.1 4.3 2.4h2C13.9 6.1 15.3 5 17.3 5c3.5 0 5.5 3.6 4.2 6.8C19.5 16.4 12 21 12 21Z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="pd-info" id="pdInfo">
+        <a class="pd-back" href="#shop" data-pd-close data-stay><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back to shop</a>
+        <p class="pd-kicker" id="pdKicker"></p>
+        <h2 class="pd-title" id="pdTitle"></h2>
+        <h3 class="pd-label">Ingredients</h3>
+        <p class="pd-ingr" id="pdIngr"></p>
+        <dl class="pd-stats" id="pdStats">
+          <div><dt>kcal</dt><dd>0</dd></div><div><dt>Protein</dt><dd>0</dd></div><div><dt>Fat</dt><dd>0</dd></div><div><dt>Carbs</dt><dd>0</dd></div>
+        </dl>
+        <p class="pd-per">Nutrition per 100 g</p>
+        <div class="pd-buy">
+          <p class="pd-price"><strong id="pdPrice"></strong><span id="pdUnit"></span></p>
+          <div class="pd-qty"><button id="pdMinus" aria-label="One fewer">−</button><span id="pdQty" aria-live="polite">1</span><button id="pdPlus" aria-label="One more">+</button></div>
+          <button class="pd-add" id="pdAdd">Add to bag</button>
+        </div>
+      </div>
+    </div>
+    <div class="pd-foot">
+      <div class="pd-step"><button id="pdPrev" aria-label="Previous cake"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 6l-6 6 6 6"/></svg></button><span id="pdIndex">01 / 10</span><button id="pdNext" aria-label="Next cake"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 6l6 6-6 6"/></svg></button></div>
+      <a class="pd-follow" href="https://www.instagram.com/" target="_blank" rel="noopener">Follow us <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+    </div>
+  </div>
+  <nav class="pd-dots" id="pdDots" aria-label="Browse cakes"></nav>
+</section>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Your cart" inert>
+  <header><button class="back" id="drawerBack" hidden aria-label="Back to cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><h2 id="drawerTitle">Your cart</h2><button class="close" id="closeCart" aria-label="Close cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
+  <div class="view" id="cartView">
+  <ul class="lines" id="lines"></ul>
+  <footer>
+    <div class="sum"><span>Subtotal</span><span id="sub">$0.00</span></div>
+    <div class="sum"><span>Delivery</span><span id="ship">$4.50</span></div>
+    <div class="sum total"><span>Total</span><span id="tot">$0.00</span></div>
+    <button class="btn" id="checkout">Checkout</button>
+    <p class="note" id="note"></p>
+  </footer>
+  </div>
+
+  <form class="view pay" id="payForm" hidden novalidate>
+    <div class="pay-body">
+      <fieldset class="seg">
+        <legend>How do you want it?</legend>
+        <label><input type="radio" name="fulfilment" id="fDelivery" value="delivery" checked><span>Delivery</span></label>
+        <label><input type="radio" name="fulfilment" id="fCollect" value="collect"><span>Collect in store</span></label>
+      </fieldset>
+      <div class="field"><label for="cName">Full name</label><input id="cName" name="name" autocomplete="name" maxlength="80" required></div>
+      <div class="field"><label for="cPhone">Mobile number</label><input id="cPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="0771 234 567" maxlength="16" required></div>
+      <div class="field"><label for="cEmail">Email <span class="opt">(optional)</span></label><input id="cEmail" name="email" type="email" autocomplete="email" maxlength="254"></div>
+      <div class="field" id="addrField"><label for="cAddress">Delivery address</label><textarea id="cAddress" name="address" rows="2" autocomplete="street-address" maxlength="200"></textarea></div>
+      <fieldset class="methods">
+        <legend>How will you pay?</legend>
+        <label class="method"><input type="radio" name="method" id="mCash" value="cash" checked><span><strong>Cash</strong><small class="when">When your order is delivered</small></span></label>
+        <label class="method"><input type="radio" name="method" id="mEcocash" value="ecocash"><span><strong>EcoCash</strong><small class="when">When your order is delivered</small></span></label>
+        <label class="method"><input type="radio" name="method" id="mCard" value="card"><span><strong>Card (swipe)</strong><small class="when">When your order is delivered</small></span></label>
+      </fieldset>
+    </div>
+    <footer>
+      <div class="sum"><span>Subtotal</span><span id="pSub">$0.00</span></div>
+      <div class="sum"><span>Delivery</span><span id="pShip">$0.00</span></div>
+      <div class="sum total"><span>Total</span><span id="pTot">$0.00</span></div>
+      <p class="pay-error" id="payError" role="alert"></p>
+      <button class="btn" id="payBtn" type="submit"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="payLabel">Place order</span></button>
+      <p class="secure">No payment is taken online. You pay when your order is delivered or collected.</p>
+    </footer>
+  </form>
+
+  <div class="view pay-status" id="payStatus" hidden aria-live="polite">
+    <div class="ps-icon" id="psIcon"></div>
+    <h3 id="psTitle"></h3>
+    <p id="psMsg"></p>
+    <p class="ps-ref" id="psRef"></p>
+    <div class="ps-actions" id="psActions"></div>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="/app.js" defer></script>
+
+</body>
+</html>
