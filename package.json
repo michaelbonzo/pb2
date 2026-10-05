@@ -1,0 +1,19 @@
+{
+  "name": "prime-baking",
+  "version": "1.0.0",
+  "description": "Prime Baking web shop with online ordering",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "orders": "node orders.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0"
+  },
+  "engines": {
+    "node": ">=20.12"
+  },
+  "private": true
+}
