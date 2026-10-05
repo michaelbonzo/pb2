@@ -22,8 +22,8 @@ const PORT = Number(process.env.PORT) || 3000;
 const PUBLIC_URL = (process.env.PUBLIC_URL || '').replace(/\/+$/, '');
 
 function fatal(msg) { console.error('Startup refused: ' + msg); process.exit(1); }
-if (!/^https?:\/\/[^/]+$/.test(PUBLIC_URL)) fatal('PUBLIC_URL must be the site origin, e.g. https://primebaking.co.zw');
-if (PROD && !PUBLIC_URL.startsWith('https://')) fatal('PUBLIC_URL must use https:// in production.');
+if (!/^https?:\/\/[^/]+$/.test(PUBLIC_URL)) fatal('https://pb2-0oba.onrender.com');
+if (PROD && !PUBLIC_URL.startsWith('https://')) fatal('https://pb2-0oba.onrender.com');
 const TRUST_HOPS = Number(process.env.TRUST_PROXY);
 if (!Number.isInteger(TRUST_HOPS) || TRUST_HOPS < 0 || TRUST_HOPS > 5) fatal('TRUST_PROXY must be set to the exact number of proxies in front of the app (0 if none, usually 1 on hosting platforms).');
 
